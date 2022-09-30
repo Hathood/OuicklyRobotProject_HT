@@ -10,10 +10,12 @@ ${Browser}    firefox
 *** Test Cases ***
 
 TC1 ChangeLanguage
+   
    [Tags]     TC1 AccessOuickly
     Open Browser      ${url}    ${Browser}
     Maximize Browser Window
     Sleep    1 
+    
     #Change Page Language
     Select From List By Label    //select[@name='selectLogin']    Anglais    
     Sleep    3

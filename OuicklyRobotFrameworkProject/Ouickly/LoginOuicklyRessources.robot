@@ -3,6 +3,7 @@ Documentation     Simple example using SeleniumLibrary.
 Library           SeleniumLibrary
 
 *** Variables ***
+
 ${url}  https://app.ouickly.fr/  
 ${Browser}    firefox
 ${Logout}    xpath://a[contains(.,'Déconnexion')] 
@@ -50,9 +51,10 @@ Dashboard should be visible
     
 Ouickly Screenshot Logo
     Wait Until Element Is Enabled    ${OuicklyLogo} 
-    Capture Element Screenshot    ${OuicklyLogo}   C:/Users/HediTOUMI/workspace/Screenshot_RobotFramework/OuicklyLogo1.png   
+    Capture Element Screenshot       ${OuicklyLogo}   C:/Users/HediTOUMI/workspace/Screenshot_RobotFramework/OuicklyLogo1.png   
     Capture Page Screenshot 
+    
 Ouickly Screenshot User avatar
     Wait Until Element Is Enabled    ${OuicklyAvatar} 
-    Capture Element Screenshot    ${OuicklyAvatar}   C:/Users/HediTOUMI/workspace/Screenshot_RobotFramework/OuicklyAvatar.png   
+    Capture Element Screenshot       ${OuicklyAvatar}   C:/Users/HediTOUMI/workspace/Screenshot_RobotFramework/OuicklyAvatar.png   
     Capture Page Screenshot 
